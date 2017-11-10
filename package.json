@@ -1,0 +1,55 @@
+{
+  "devDependencies": {
+    "electron-builder": "^19.35.1",
+    "electron": "1.7.9"
+  },
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron ./app --enable-logging",
+    "startclean": "electron ./app --enable-logging --clean",
+    "dev": "NODE_ENV='development' npm run start",
+    "dist": "build  -lw"
+  },
+  "build": {
+    "appId": "electrongui.gherardovarando",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "appx": {
+      "backgroundColor": "#c8c9ce",
+      "displayName": "electrongui",
+      "publisherDisplayName": "Gherardo Varando",
+      "identityName": "electrongui"
+    },
+    "deb": {
+      "synopsis": "A general gui app written in electron"
+    },
+    "linux": {
+      "category": "Science",
+      "desktop": {
+        "Actions": "OpenClean",
+        "category": "science\n[Desktop Action OpenClean]\nName=Clean workspace\nExec=/opt/Atlas/atlas --clean"
+      },
+      "target": {
+        "target": "deb",
+        "arch": [
+          "x64"
+        ]
+      }
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "runAfterFinish": true
+    }
+  }
+}
