@@ -21,13 +21,6 @@ const {
   MenuItem,
   app
 } = require('electron').remote
-const isSecond = app.makeSingleInstance((argv, workingdir) => {
-  if (argv.includes('--clean')) gui.workspace.newChecking()
-  if (win) win.show()
-})
-if (isSecond) {
-  app.quit()
-}
 const isDev = require('electron-is-dev')
 const {
   TasksViewer,
@@ -146,8 +139,6 @@ gui.extensions.on('error', (e) => {
 gui.extensions.activate() //activate the extensionmanager
 let tasksViewer = new TasksViewer(gui)
 tasksViewer.activate()
-
-gui.viewTrick()
 let stat = 'default'
 if (isDev) stat = 'warning'
 gui.alerts.add(`App loaded in ${(new Date())-t} ms`, stat)

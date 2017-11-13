@@ -1,28 +1,20 @@
 {
   "devDependencies": {
-    "electron-builder": "^19.35.1",
-    "electron": "1.7.9"
+    "electron": "1.7.9",
+    "electron-builder": "^19.45.6"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "start": "electron ./app --enable-logging",
     "startclean": "electron ./app --enable-logging --clean",
     "dev": "NODE_ENV='development' npm run start",
-    "dist": "build  -lw"
+    "dist": "build  -lw",
+    "distMac": "build -m"
   },
   "build": {
     "appId": "electrongui.gherardovarando",
     "mac": {
-      "category": "your.app.category.type"
-    },
-    "appx": {
-      "backgroundColor": "#c8c9ce",
-      "displayName": "electrongui",
-      "publisherDisplayName": "Gherardo Varando",
-      "identityName": "electrongui"
-    },
-    "deb": {
-      "synopsis": "A general gui app written in electron"
+      "category": "Science"
     },
     "linux": {
       "category": "Science",
@@ -51,5 +43,8 @@
       "perMachine": false,
       "runAfterFinish": true
     }
+  },
+  "dependencies": {
+    "electrongui": "^0.7.1"
   }
 }
