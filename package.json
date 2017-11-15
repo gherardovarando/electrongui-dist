@@ -43,8 +43,5 @@
       "perMachine": false,
       "runAfterFinish": true
     }
-  },
-  "dependencies": {
-    "electrongui": "^0.7.1"
   }
 }

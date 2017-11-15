@@ -1,5 +1,5 @@
 {
-  "name": "electrongui",
+  "name": "electrongui-app",
   "author": "Gherardo Varando <gherardo.varando@gmail.com>",
   "version": "0.0.2",
   "description": "An extendible and flexible application for maps analysis and visualization",
@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "electron-is-dev": "^0.1.2",
-    "electrongui": "^0.6.10"
+    "electrongui": "^0.7.4"
   }
 }

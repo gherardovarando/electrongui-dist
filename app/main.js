@@ -40,7 +40,7 @@ if (process.platform === 'win32') {
 }
 
 
-
+app.setPath('userData',path.join(app.getPath('home'),`.${app.getName()}`))
 
 function createWindow() {
 
