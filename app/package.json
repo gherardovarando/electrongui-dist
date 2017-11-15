@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "electron-is-dev": "^0.1.2",
-    "electrongui": "^0.7.4"
+    "electrongui": "^0.7.5"
   }
 }
