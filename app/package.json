@@ -1,7 +1,7 @@
 {
   "name": "electrongui-app",
   "author": "Gherardo Varando <gherardo.varando@gmail.com>",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An extendible and flexible application for maps analysis and visualization",
   "product name": "MultiMap",
   "homepage": "https://github.com/gherardovarando/Atlas",
