@@ -19,8 +19,7 @@
     "linux": {
       "category": "Science",
       "desktop": {
-        "Actions": "OpenClean",
-        "category": "science\n[Desktop Action OpenClean]\nName=Clean workspace\nExec=/opt/Atlas/atlas --clean"
+        "category": "science"
       },
       "target": {
         "target": "deb",
