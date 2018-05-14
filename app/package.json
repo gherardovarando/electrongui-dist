@@ -1,34 +1,29 @@
 {
   "name": "electrongui-app",
   "author": "Gherardo Varando <gherardo.varando@gmail.com>",
-  "version": "0.0.3",
-  "description": "An extendible and flexible application for maps analysis and visualization",
-  "product name": "MultiMap",
-  "homepage": "https://github.com/gherardovarando/Atlas",
+  "version": "1.2.0",
+  "description": "GUI with electron",
+  "product name": "Electrongui",
+  "homepage": "https://github.com/gherardovarando/electrongui",
   "bugs": {
     "email": "gherardo.varando@gmail.com"
   },
   "main": "main.js",
   "scripts": {
     "startclean": "electron . --clean --enable-logging",
-    "start": "electron . --enable-logging",
-    "pack:osx": "electron-packager .   --overwrite --version=1.4.5 --platform=darwin --arch=x64 --icon=images/appicons/icon.icns",
-    "pack:win32": "electron-packager . --overwrite --version=1.4.5 --platform=win32 --arch=ia32 --icon=images/appicons/icon.ico",
-    "pack:win64": "electron-packager . --overwrite --version=1.4.5 --platform=win32 --arch=x64  --icon=images/appicons/icon.ico",
-    "pack:linux": "electron-packager . --overwrite --version=1.4.5 --platform=linux --arch=x64  --icon=images/appicons/icon.png",
-    "packall": "npm run pack:osx && npm run pack:win32 && npm run pack:win64 && npm run pack:linux"
+    "start": "electron . --enable-logging"
   },
-  "repository": "https://github.com/gherardovarando/electrongui-dev",
+  "repository": "https://github.com/gherardovarando/electrongui-dist",
   "keywords": [
     "electrongui",
     "electron"
   ],
   "license": "MIT",
   "devDependencies": {
-    "electron": "1.7.9"
+    "electron": "2.0.0"
   },
   "dependencies": {
     "electron-is-dev": "^0.1.2",
-    "electrongui": "^0.7.6"
+    "electrongui": "1.2.0"
   }
 }

@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "electron": "1.7.9",
-    "electron-builder": "^19.45.6"
+    "electron": "2.0.0",
+    "electron-builder": "*"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
