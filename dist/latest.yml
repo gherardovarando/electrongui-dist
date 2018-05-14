@@ -1,8 +1,0 @@
-version: 1.2.0
-files:
-  - url: electrongui-app-setup-1.2.0.exe
-    sha512: YbL6FIckzhKfZRD57ciFo66ugzVdBbXv/irSQK9n2IzaknLIhBsEABkg7iYCdepP5487FSNVKjmYnEv5dfj3ew==
-path: electrongui-app-setup-1.2.0.exe
-sha512: YbL6FIckzhKfZRD57ciFo66ugzVdBbXv/irSQK9n2IzaknLIhBsEABkg7iYCdepP5487FSNVKjmYnEv5dfj3ew==
-sha2: 3427c534838eccefeea371b6c9324dac9b6bd339829ddfecb683c20ec215b6c7
-releaseDate: '2018-05-14T13:39:01.552Z'
